@@ -189,7 +189,7 @@
         <h1 class="h1_title">如何使用icon-font ? </h1>
         <p class="nortice">如果您开发是web前台页面，并且继承了公用页头，那么就无需再引入<b class="col_green">iconfont.css了，因为公用页头里已经集中引入！</b>反之往下看：</p>
         <div class="helps">
-            第一步：项目中引入iconfont字体文件 2种方式：
+            第一步：项目中引入iconfont字体文件 3种方式：
         <pre>
 
         方式一：<b class="col_orange">常规方式，旧php框架自动引入(马上要废弃)</b>！直接在页面相应的.php资源引入里配置(引用static仓库master分支当前最新的字体文件)，示例代码如下：
@@ -203,8 +203,11 @@
                 );
             }
 
-        方式二：<b class="col_orange">手动直接引入</b>！直接引用线上最新发布的1.1.0版本的iconfont.css 字体文件(你可以根据需求来指定引入已经发布的版本文件，初始化为1.0.0)，比如：
-            &lt;link href="http://static.anhouse.com/common/1.1.0/iconfont/mobile/iconfont-min.css" rel="stylesheet" type="text/css"&gt;
+        方式二：<b class="col_orange">手动直接引入--时间戳更新方式</b>！直接引用线上最新发布的iconfont-min.css 字体文件(需要引用新发布版本，每次通过手动给iconfont-min.css添加时间戳引用更新)，比如：
+            &lt;link href="http://static.anhouse.com/common/iconfont/mobile/iconfont-min.css?t=20160222" rel="stylesheet" type="text/css"&gt;
+
+        方式三：<b class="col_orange">手动直接引入--common仓库版本号方式</b>！直接引用线上最新发布的1.0.3版本的iconfont-min.css 字体文件(你可以根据需求来指定引入已经发布的版本文件，初始化为1.0.0)，比如：
+            &lt;link href="http://static.anhouse.com/common/1.0.3/iconfont/mobile/iconfont-min.css" rel="stylesheet" type="text/css"&gt;
         </pre>
 
 
